@@ -18,6 +18,7 @@ import VoidSurvivalVisual from "../app-components/VoidSurvivalVisual";
 import FSCardsVisual from "../app-components/FSCardsVisual";
 import FootballLifeVisual from "../app-components/FootballLifeVisual";
 import FitVoidVisual from "../app-components/FitVoidVisual";
+import VoidBusinessVisual from "../app-components/VoidBusinessVisual";
 import ZenVoidMoonBackground from "../app-components/zenvoid/MoonBackground";
 import BloomOrbBackground from "../app-components/bloom/BloomOrbBackground";
 
@@ -37,6 +38,22 @@ const APPS = [
     platforms: ["ios", "android"],
     external: false,
     features: ["Workout Logging", "Meal Tracking", "Body Metrics", "Apple Health", "Local-First Privacy", "Optional Cloud Sync"],
+    storeLinks: {},
+  },
+  {
+    id: "void-business",
+    name: "Void Business",
+    tagline: "Tap. Invest. Build an empire.",
+    description: "Void Business is an idle tycoon game. Tap to earn your first dollars, take jobs, trade a live market and grow a business empire across Void City.",
+    fullDesc: "Void Business is an idle tycoon game. Tap to earn your first dollars, then pick up shifts from a rotating job board, from Barista to Astronaut. Trade 77 stocks, 30 cryptocurrencies and 20 properties on a market that moves every minute and pays dividends. Start businesses from a Local Cafe to Void City Bank, then build a Legacy collection through the Auction House and Private Dealer. Plays in 29 languages, with no account needed.",
+    emoji: "💼",
+    color: "#fbbf24",
+    bg: "linear-gradient(160deg, #0a0a0a 0%, #1f1606 50%, #070604 100%)",
+    link: "/voidbusiness",
+    status: "coming-soon",
+    platforms: ["ios"],
+    external: false,
+    features: ["Tap to Earn", "Job Board", "Live Stock Market", "Crypto & Real Estate", "9 Businesses", "Legacy Collection", "Card Skins"],
     storeLinks: {},
   },
   {
@@ -285,6 +302,7 @@ function BloomPhonePreview() {
 // Map visuals to apps - using adapted components from real app source code
 const VISUALS = {
   "fit-void": FitVoidVisual,
+  "void-business": VoidBusinessVisual,
   "zen-void": ZenVoidPhonePreview,
   "bloom": BloomPhonePreview,
   "tap-tap-three": TapTapThreeVisual,
@@ -303,6 +321,7 @@ function AppSection({ app, index }) {
   // Map app IDs to their page routes
   const appRoutes = {
     "fit-void": "/fit-void",
+    "void-business": "/voidbusiness",
     "zen-void": "/zenvoid",
     "bloom": "/bloom",
     "tap-tap-three": "/taptapthree",
@@ -315,6 +334,7 @@ function AppSection({ app, index }) {
 
   // Zen Void, Bloom and Tap Tap Three are special — full background + left column as link
   const isFitVoid = app.id === "fit-void";
+  const isVoidBusiness = app.id === "void-business";
   const isZenVoid = app.id === "zen-void";
   const isBloom = app.id === "bloom";
   const isTapTapThree = app.id === "tap-tap-three";
@@ -344,6 +364,57 @@ function AppSection({ app, index }) {
             </div>
           </div>
         </div>
+      </section>
+    );
+  }
+
+  if (isVoidBusiness) {
+    return (
+      <section className="vbiz-section" style={{ position: 'relative', background: 'linear-gradient(160deg, #0a0a0a 0%, #1f1606 50%, #070604 100%)', minHeight: '100vh', display: 'flex', alignItems: 'center', padding: '120px 20px', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: '18%', left: '8%', width: '520px', height: '520px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(251,191,36,0.10) 0%, rgba(251,191,36,0) 70%)', pointerEvents: 'none' }} />
+        <div style={{ maxWidth: '1400px', margin: '0 auto', width: '100%', position: 'relative' }}>
+          <div className="vbiz-grid">
+            <div className="vbiz-visual" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '520px' }}>
+              {VisualComponent && <VisualComponent />}
+            </div>
+            <div className="vbiz-text" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              <Link href="/voidbusiness" style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: '24px', cursor: 'pointer' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                  <img src="/app-assets/void-business-icon.png" alt="Void Business" width={56} height={56} style={{ borderRadius: '12px', flexShrink: 0 }} />
+                  <span style={{ padding: '8px 20px', borderRadius: '24px', fontSize: '13px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px', background: 'rgba(251,191,36,0.15)', color: '#fbbf24', border: '1px solid rgba(251,191,36,0.3)' }}>Coming Soon</span>
+                </div>
+                <h2 className="vbiz-title" style={{ fontSize: '64px', fontWeight: '900', color: '#f8fafc', lineHeight: 1.1, margin: 0 }}>{app.name}</h2>
+                <p style={{ fontSize: '20px', fontWeight: '500', color: app.color, margin: 0 }}>{app.tagline}</p>
+                <p style={{ fontSize: '17px', color: '#94a3b8', lineHeight: 1.6, margin: 0 }}>{app.fullDesc}</p>
+                <div style={{ fontSize: '24px', fontWeight: 'bold', color: app.color }}>→</div>
+              </Link>
+              <div style={{ display: 'flex', gap: '20px', fontSize: '14px' }}>
+                <Link href="/voidbusiness/privacy" style={{ color: '#64748b', textDecoration: 'none' }}>Privacy Policy</Link>
+                <Link href="/voidbusiness/terms" style={{ color: '#64748b', textDecoration: 'none' }}>Terms of Use</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <style jsx>{`
+          .vbiz-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            align-items: center;
+          }
+          @media (max-width: 960px) {
+            .vbiz-grid {
+              grid-template-columns: 1fr;
+              gap: 56px;
+            }
+            .vbiz-text {
+              order: -1;
+            }
+            .vbiz-title {
+              font-size: 44px !important;
+            }
+          }
+        `}</style>
       </section>
     );
   }

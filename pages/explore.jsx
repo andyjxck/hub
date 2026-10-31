@@ -15,6 +15,16 @@ const APPS = [
     page: "/fit-void",
   },
   {
+    id: "void-business",
+    name: "Void Business",
+    tagline: "Tap. Invest. Build an empire.",
+    link: "",
+    status: "coming-soon",
+    emoji: "💼",
+    color: "#fbbf24",
+    page: "/voidbusiness",
+  },
+  {
     id: "football-life",
     name: "Void Baller",
     tagline: "Rise. Play. Become a Legend.",
