@@ -151,15 +151,16 @@ function simulatePriceChange(currentPrice, volatility, drift, minutesElapsed) {
   return Math.min(base * 1e3, Math.max(next, 0.01));
 }
 
-// Seeds every asset with an hour-by-hour history so the charts have data at once.
+// Seeds every asset with 30 minutes of history so the charts have data at once
+// while prices stay close to their base price.
 export function createInitialMarketState() {
   const state = {};
   for (const asset of STOCKS) {
     const drift = getAssetDrift(asset);
     const history = [asset.basePrice];
     let price = asset.basePrice;
-    for (let i = 0; i < 24; i++) {
-      price = simulatePriceChange(price, asset.volatility, drift, 60);
+    for (let i = 0; i < 29; i++) {
+      price = simulatePriceChange(price, asset.volatility, drift, 1);
       history.push(price);
     }
     state[asset.id] = { id: asset.id, price, prevPrice: history[history.length - 2], history };
