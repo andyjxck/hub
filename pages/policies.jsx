@@ -832,6 +832,132 @@ const content = {
       </>
     ),
   },
+  "void-business": {
+    subtitle: "Business tycoon simulation game",
+    privacy: (
+      <>
+        <p><strong>Last Updated: October 30, 2026</strong></p>
+        <p>Full page: <a href="/voidbusiness/privacy">andysocialapps.website/voidbusiness/privacy</a></p>
+
+        <h4>Who we are</h4>
+        <p>Void Business is a single-player game published by an independent developer trading as AndySocial ("we", "us"). We are the data controller for the limited processing described in this policy.</p>
+        <p>Contact: <a href="mailto:andy@theandysocial.website">andy@theandysocial.website</a></p>
+
+        <h4>The short version</h4>
+        <p>There are no accounts and we run no servers. Your game stays on your device and, if iCloud is on, in your own iCloud. The only other parties involved are Apple, which handles purchases and iCloud, and Google, whose AdMob SDK serves the optional rewarded ads. We do not run analytics or crash reporting of our own.</p>
+
+        <h4>What stays on your device</h4>
+        <ul>
+          <li>Game data: your balance, businesses, investments, collections, purchases, settings and stats.</li>
+          <li>Names you type: names you give your games, films, businesses and similar items are saved only on your device (and in your own iCloud save if iCloud is on). They are never sent to us, to Google or to anyone else.</li>
+        </ul>
+        <p>We cannot see any of this data.</p>
+
+        <h4>iCloud</h4>
+        <p>If iCloud is enabled for Void Business on your device, a copy of your save is stored in your private iCloud key-value store under your Apple Account so it can sync between your devices. Apple holds it under Apple's privacy policy. We cannot see, access or retrieve it.</p>
+
+        <h4>Purchases</h4>
+        <p>Apple processes all payments for in-app purchases and the VIP subscription. Apple tells the app which product you bought and whether your subscription is active, and the app stores that on your device. We never see your name, Apple Account details or card details.</p>
+
+        <h4>Ads (Google AdMob)</h4>
+        <p>Void Business shows rewarded video ads only. An ad plays only when you choose to watch one in exchange for an in-game reward. There are no banner or pop-up ads.</p>
+        <ul>
+          <li>Google's Mobile Ads SDK starts when the app launches. For players without VIP, the app then loads one rewarded ad in advance so it is ready if you choose to watch it. For VIP members the app does not load or show ads, but the SDK still starts at launch.</li>
+          <li>The app requests non-personalised ads only. Google does not use your activity in this app to personalise ads.</li>
+          <li>The app never asks for permission to track you, so iOS does not give the app or Google your advertising identifier (IDFA).</li>
+          <li>As Google discloses for its Mobile Ads SDK, Google may collect your IP address (which can indicate your general location), app- or developer-scoped device identifiers, how you interact with ads and the app (such as launches, taps and video views), and diagnostic information such as crash logs and performance data (for example launch time, hang rate and energy use). Google uses this to deliver ads, measure them, prevent fraud and improve its services.</li>
+        </ul>
+        <p>Google's disclosure: <a href="https://developers.google.com/admob/ios/privacy/data-disclosure" target="_blank" rel="noopener noreferrer">https://developers.google.com/admob/ios/privacy/data-disclosure</a><br />Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+
+        <h4>What we do not do</h4>
+        <ul>
+          <li>No accounts, sign-ins or profiles</li>
+          <li>No analytics, crash reporting or telemetry of our own</li>
+          <li>No tracking across other companies' apps or websites, and no advertising profiles</li>
+          <li>No sale of personal data</li>
+          <li>No servers of our own, so nothing is stored by us</li>
+        </ul>
+
+        <h4>Sharing and third parties</h4>
+        <p>Data is processed only by the companies needed to run the features described above:</p>
+        <ul>
+          <li>Apple: App Store payments, subscriptions and iCloud sync (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">https://www.apple.com/legal/privacy/</a>)</li>
+          <li>Google: AdMob ad delivery and the diagnostics described above (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>). This may involve processing in the United States under appropriate UK GDPR transfer safeguards.</li>
+        </ul>
+        <p>Any third party that receives user data from the app, including Apple and Google, must provide the same or equal protection of that data as stated in this policy and as required by Apple's App Store Review Guidelines. No one else receives data from the app.</p>
+
+        <h4>Lawful bases (UK GDPR)</h4>
+        <ul>
+          <li>Contract: storing your game and purchase entitlements is necessary to provide the game you chose to use.</li>
+          <li>Legitimate interests: showing optional, non-personalised rewarded ads that fund the free game, and Apple's and Google's fraud prevention and security.</li>
+        </ul>
+
+        <h4>Retention and deletion</h4>
+        <p>Game data stays until you delete it. Reset Progress in Settings deletes your progress on this device and clears the iCloud copy. Deleting the app removes the local copy. You can also remove the iCloud copy in iOS Settings &gt; [your name] &gt; iCloud &gt; Manage Storage (or Storage).</p>
+        <p>Purchase records are kept by Apple under Apple's policies. Data collected by Google's SDK is kept under Google's policies.</p>
+
+        <h4>Your rights</h4>
+        <p>Under UK GDPR you have the right to access, rectification, erasure, restriction, portability and to object to processing. Because your data lives on your device and in your own iCloud, you already hold it: you can reset it in Settings or delete the app at any time.</p>
+        <p>For anything else, email <a href="mailto:andy@theandysocial.website">andy@theandysocial.website</a>. You can also complain to the UK Information Commissioner's Office (<a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">ico.org.uk</a>).</p>
+
+        <h4>Children</h4>
+        <p>The app is not directed at children and we do not knowingly collect personal information from them. Purchases are protected by Apple's parental controls and Ask to Buy.</p>
+
+        <h4>Security</h4>
+        <p>Your game data leaves your device only through Apple's iCloud (encrypted in transit and at rest under your Apple Account) and the purchase and ad requests described above. No system is perfectly secure, but the app keeps its data footprint deliberately small.</p>
+
+        <h4>Changes</h4>
+        <p>If this policy changes, the new version will appear in the app and at <a href="https://andysocialapps.website/voidbusiness/privacy" target="_blank" rel="noopener noreferrer">https://andysocialapps.website/voidbusiness/privacy</a> with a new "last updated" date.</p>
+
+        <h4>Contact</h4>
+        <p>Questions about privacy: <a href="mailto:andy@theandysocial.website">andy@theandysocial.website</a></p>
+      </>
+    ),
+    terms: (
+      <>
+        <p><strong>Last Updated: October 30, 2026</strong></p>
+        <p>Full page: <a href="/voidbusiness/terms">andysocialapps.website/voidbusiness/terms</a></p>
+
+        <h4>Agreement</h4>
+        <p>These Terms of Use apply to Void Business, published by an independent developer trading as AndySocial ("we", "us"). Your use of the app is also governed by Apple's Licensed Application End User License Agreement (the "Standard EULA"): <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>. These terms add to the Standard EULA. If you do not agree, do not use the app.</p>
+
+        <h4>The game</h4>
+        <p>Void Business is a single-player simulation game for entertainment. All companies, coins, products, people and news in the game are fictional. Nothing in the game is financial advice.</p>
+
+        <h4>Virtual items</h4>
+        <p>In-game cash, businesses, upgrades, card skins and other items are virtual. They have no real-world monetary value, cannot be exchanged for money or real goods, and are licensed to you, not sold. We may adjust game balance at any time.</p>
+
+        <h4>Purchases</h4>
+        <p>In-app purchases and the VIP subscription are billed by Apple to your Apple Account. Prices are shown in the app and confirmed by Apple before you pay. Refunds are handled by Apple under Apple's policies and your statutory rights. Use Restore Purchases in the shop to restore non-consumable purchases and an active subscription on a new device.</p>
+
+        <h4>VIP subscription</h4>
+        <p>VIP is an auto-renewable subscription, available as VIP Monthly (1 month) and VIP Yearly (1 year). Payment is charged to your Apple Account when you confirm the purchase. The subscription renews automatically at the price shown for the same period unless you turn off auto-renew at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the end of the current period.</p>
+        <p>You can manage or cancel your subscription at any time in your Apple Account settings (iOS Settings &gt; [your name] &gt; Subscriptions). Cancelling stops future charges; VIP benefits continue until the end of the period you have paid for.</p>
+        <p>If the price changes, Apple notifies you under its standard rules and you can cancel before the new price applies.</p>
+
+        <h4>Digital content and cancellations</h4>
+        <p>Under UK consumer law, when you buy digital content for immediate delivery you agree that supply begins immediately and you lose the 14-day cancellation right once delivery begins. Your statutory rights for faulty content are not affected.</p>
+
+        <h4>Fair play</h4>
+        <p>Do not exploit bugs, tamper with the app or use automation to gain an advantage. We may reset progress gained through exploits.</p>
+
+        <h4>Availability</h4>
+        <p>We may update, suspend or discontinue features. Where a paid entitlement is materially affected, you may be entitled to a proportionate refund under consumer law.</p>
+
+        <h4>Liability</h4>
+        <p>Nothing in these terms excludes liability for death or personal injury caused by negligence, for fraud, or for any liability that cannot be excluded under law. Otherwise the app is provided "as is", and to the extent permitted by law we are not liable for loss of virtual progress caused by device failure or deletion.</p>
+
+        <h4>Governing law</h4>
+        <p>These terms are governed by the laws of England and Wales, and the courts of England and Wales have jurisdiction, without affecting any mandatory consumer rights where you live.</p>
+
+        <h4>Privacy</h4>
+        <p>How the app handles data is explained in the Privacy Policy: <a href="https://andysocialapps.website/voidbusiness/privacy" target="_blank" rel="noopener noreferrer">https://andysocialapps.website/voidbusiness/privacy</a></p>
+
+        <h4>Contact</h4>
+        <p>Questions about these terms: <a href="mailto:andy@theandysocial.website">andy@theandysocial.website</a></p>
+      </>
+    ),
+  },
 };
 
 // -------------------- ALL APPS --------------------
@@ -847,6 +973,7 @@ const ALL_APPS = [
   { id: "void-musician", title: "Void Musician" },
   { id: "game-void-2",   title: "Game Void 2" },
   { id: "football-life", title: "Void Baller" },
+  { id: "void-business", title: "Void Business" },
 ];
 
 // -------------------- COMPONENT --------------------
